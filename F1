@@ -1,0 +1,15 @@
+/****************************************************
+Hej hejeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeafafaefafaewfafa
+ mjmeniusnvinrusnfgnsrngorngrsno
+*****************************************************/
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("1234567890012334567891111" +
+                "1111111111111111111");
+        
+        //System.out.print("12\t34\n5678\n910\n");
+        // System.out.println("");
+        System.out.println("a+b=c");
+    }
+}
