@@ -1,0 +1,68 @@
+/****************************************************
+
+ Ett java program
+
+*****************************************************/
+
+public class Main {
+    public static void main(String[] args) {
+        //del1();
+        //del2();
+        del3();
+    }
+
+    static void del1(){
+        int nummber1 = 2147000000;     // inisierar variabeln n till 12
+        int nummber2 = 2147000000;
+        long n = 214800000000L;   // Måste ha L för att säga till Java att datatypen är long
+        n = 2;
+        n = 1222222222222222222L;
+        Integer test = 1;
+        long sum = (long) nummber1 + nummber2;
+
+        System.out.println(sum);
+        System.out.println(test);
+        System.out.println(n);
+
+        final int NUMBER_OF_STUDENTS = 279;
+    }
+
+    static void del2(){
+        //float n = 10.5F;    // Måste använda F för att skapa som float annars skapas dem som double
+        //double n = 105E-1;  // Gånger 10^-1
+        // Man kan få mycket stora number med floting point nummber, men inte lika nogranhet.
+        // Man kan representera 1.25 som 125 * 10^-2 {125, -2}
+
+
+        //double n = 1.5E300;
+        //System.out.println(n);
+
+        float n = 1.23456789F;
+        System.out.println(n);  // Skriver inte ut 8:an
+    }
+
+    static void del3(){
+        char c = '\"';
+        char c1 = 65;
+
+        System.out.println(c);
+        System.out.println((int)'\n');
+    }
+}
+
+/*
+automatiska omvanligngar tex:
+
+int n = 12;
+long n1 = n;
+double n2 = n;
+
+tvingande ovanlingar (Kan hända att du förlorar data tex deciamaler):
+short n2 = (short) n;
+
+float har 6st signifikanta siffror, och long har 15 signifikanta siffror.
+
+A börjar på 65
+a börjar på 97
+
+ */
