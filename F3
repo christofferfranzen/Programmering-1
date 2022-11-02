@@ -1,0 +1,70 @@
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class test {
+
+    //public static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws Exception {
+        //del1();
+        del2();
+    }
+    private static void del2(){
+        short n1 = 10;
+        int n2 = 15;
+        double d = 3;
+        double n = (n1 + n2) * d;
+
+        boolean b1 = false;
+        boolean b2 = true;
+
+        System.out.println(b1 ^ b2);
+
+        System.out.println(n);
+    }
+
+    private static void del1() throws IOException {
+        //java.util.Scanner scanner = new Scanner(System.in);
+        //scanner.useLocale(Locale.US);
+        java.io.InputStreamReader in = new java.io.InputStreamReader(System.in);    // Kräver throws Exception för att få använda in.read()
+
+        char c1 = (char)in.read();
+        System.out.println(c1);
+
+        /*
+        System.out.println("Skriv en rad:");
+        String n1 = scanner.nextLine();
+        System.out.println(n1);
+        System.out.printf("%s", n1);
+
+         */
+
+        /*
+
+        int n = 12;
+        System.out.println("Skriv in något");
+
+        int temp = -1;
+
+        try {
+            temp = scanner.nextInt();
+        } catch (InputMismatchException e){
+            System.out.println("Din jävla pök skriv in en int plzz " + e);
+        }
+
+        System.out.println(temp);
+
+        //System.out.println(f"{n}");
+        System.out.printf("hej din lilla babian %d %d", n, temp);
+
+         */
+    }
+}
+/*
+
+|| snabbare men kolla bara på ett av argumenten, medans | kollar på båda
+Samma med && och &
+
+ */
