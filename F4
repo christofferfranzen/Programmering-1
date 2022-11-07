@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int m = 26;
+        int n = 17;
+
+        if (n>10)
+            System.out.println("> 10");
+        else
+            System.out.println("<= 10");
+
+
+        int max = (m>n)? m : n;
+
+        System.out.println(max);
+
+        int val = scanner.nextInt();
+
+        while (val > 0){    // kan inte vara float tal,
+            switch (val){
+                case 1:
+                    System.out.println("1");
+                    break;
+                case 2:
+                    System.out.println("trvååå");
+                    break;
+                default:
+                    System.out.println("idk");
+                    break;
+            }
+            System.out.println("Skriv in ett tal");
+            val = scanner.nextInt();
+        }
+    }
+}
